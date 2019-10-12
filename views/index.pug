@@ -3,3 +3,8 @@ html
     title= title
   body
     h1= message
+
+
+  each repo, key in collection
+      li
+        a(href=repo.link) #{repo.name}
