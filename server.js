@@ -5,6 +5,7 @@ const port = process.env.PORT || 80;
 const host = '0.0.0.0';
 
 app.listen(port, host, () => console.log(`listening on port ${port}`));
+app.use(express.static('public'))
 app.set('views', './views')
 app.set('view engine', 'pug')
 
