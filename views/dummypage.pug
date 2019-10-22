@@ -1,0 +1,10 @@
+html
+    head
+        link(rel="stylesheet" type="text/css" href="/style.css")
+        title #{repo.name}
+    body
+        h1 #{repo.name}
+        h3 
+            a(href=repo.html_url) #{repo.name}
+            p #{repo.description}
+

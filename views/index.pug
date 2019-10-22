@@ -8,4 +8,4 @@ html
 
   each repo, key in collection
       li
-        a(href=repo.html_url) #{repo.name}
+        a(href= "/repos/" + repo.id) #{repo.name}
